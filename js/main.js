@@ -1,37 +1,20 @@
 "use strict";
 
-let budgetOneDay;
+let money = prompt("Ваш бюджет на месяц?", '');
+    time = prompt("Введите дату в формат YYYY-MM-DD", '');
+
 let appData ={
-  money: "",
-  time: "",
+  budget: money,
   expenses: {},
   optionalExpenses: "",
-  income: "",
+  income: [],
+  timeData: time,  
   saving: false
 };
 
-appData.money = parseInt(prompt("Ваш бюджет на месяц?"));
-appData.time = prompt("YYYY-MM-DD");
-appData.expenses[String(prompt("Введите обязательную статью расходов в этом месяце"))] = String([prompt("Во сколько обойдется?")]);
-budgetOneDay = appData.money/30;
+let a1 = prompt("Введите обязательную статью расходов в этом месяце"),
+    a2 = prompt("Во сколько обойдется?");
 
-alert(budgetOneDay);
+appData.expenses.a1 = a2;
 
-// типы данных:
-// Boolean (Булев, Логический тип)
-// Null (Null тип )
-// Undefined (Неопределенный тип)
-// Number (Число)
-// String (Строка)
-// Symbol (в ECMAScript 6)
-// Object (Объект)
-
-// console.log
-
-// || - логическое или. Если выполняется одно из условий, то возвращается true, проверка идет до первого true
-// && - логическое и. Если не выполняется одно из условий, то возвращается false, проверка идет до первого false или до конца
-
-
-
-
-
+alert(appData.budget / 30);
