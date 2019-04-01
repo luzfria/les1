@@ -16,5 +16,4 @@ let a1 = prompt("Введите обязательную статью расхо
     a2 = prompt("Во сколько обойдется?");
 
 appData.expenses.a1 = a2;
-
 alert(appData.budget / 30);
