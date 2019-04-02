@@ -74,4 +74,4 @@ function chooseOptExprenses() {
     appData.optionalExpenses[i] = prompt("Статья необязательных расходов?");
   }
 }
-chooseOptExprenses();
+// chooseOptExprenses();
